@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <p>
+        <center>
+            <h3>AI-Infused Search Insight Generator</h3>
+            <br>
+            <i>Get your query answered quickly with the content you require</i>
+            <br>
+            <br>
+            <form method="get" action="http://localhost:5276/backend/GetTop10SearchResults">
+                <br><br>
+                <input type="text" class="form-control" name="query" placeholder="Enter your query here" />
+                <br>
+
+                <br>
+                <i>Begin your Searching Journey by clicking here    </i><!--<input type="submit" value="Search" onclick="onClickEvent()">--><button id="getButton"> Search </button>
+            </form>
+            <div id="content" style="display:none">
+
+            </div>
+            <br><br><br><br><br><br>
+            <a onclick="Share.facebook('URL','TITLE','IMG_PATH','DESC')"><img src="https://brandlogos.net/wp-content/uploads/2021/04/facebook-icon.png" width="80" height="80"></a>
+            <a onclick="Share.twitter('URL','TITLE')"><img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-twitter-icon-logo-png-image_3560525.jpg" width="80" height="80"</a>
+            <br>
+        </center>
+    </p>
+</div>
